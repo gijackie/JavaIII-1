@@ -1,0 +1,40 @@
+package jWebProject;
+
+import java.io.Serializable;
+
+public class HeaderBean implements Serializable{
+	private String hkey;
+	private String hval;
+	
+
+	
+//	
+//	public HeaderBean(String key, String val) {
+//		// TODO Auto-generated constructor stub
+//	}
+
+	public  HeaderBean(String key, String val){
+		this.hkey = key;
+		this.hval = val;
+		//System.out.println("key is " + key + "; val is " + val);
+	}
+		
+	
+	public String getHkey() {
+		return hkey;
+	}
+
+	public void setHkey(String hkey) {
+		this.hkey = hkey;
+	}
+
+	public String getHval() {
+		return hval;
+	}
+
+	public void setHval(String hval) {
+		this.hval = hval;
+	}
+
+	
+}
